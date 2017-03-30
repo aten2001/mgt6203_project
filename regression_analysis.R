@@ -1,5 +1,8 @@
 data = read.csv("~/gatech/mgt6203/project/total_num_coup_units.csv",header=TRUE,sep=",",stringsAsFactors=FALSE)
 
+data$male_head_race = as.factor(data$male_head_race)
+data$female_head_race = as.factor(data$female_head_race)
+
 model <- lm(formula = total_num_coup_units~., data=data)
 summary(model)
 
