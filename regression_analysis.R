@@ -1,34 +1,37 @@
-data = read.csv("~/gatech/mgt6203/project/total_num_coup_units.csv",header=TRUE,sep=",",stringsAsFactors=FALSE)
+data = read.csv("~/gatech/mgt6203/project/new_data.csv",header=TRUE,sep=",",stringsAsFactors=FALSE)
+
+data$total_units_purchased = data$total_units_purchased / 100
+data$response = data$total_units_purchased_on_store_coup / data$total_units_purchased
 
 data$male_head_race = as.factor(data$male_head_race)
 data$female_head_race = as.factor(data$female_head_race)
 
-model <- lm(formula = total_num_coup_units~., data=data)
+model <- lm(formula = response~rim_market + household_income + num_members_in_household + male_head_race + female_head_race, data=data)
 summary(model)
 
 library(ggplot2)
 
-ggplot(data=data, aes(factor(rim_market), total_num_coup_units)) +
+ggplot(data=data, aes(factor(rim_market), response)) +
   geom_boxplot() + 
   xlab("ERIM Market") + 
-  ylab("Total # coupon units")
+  ylab("Units purchased w coupon/units purchased")
 
-ggplot(data=data, aes(factor(household_income), total_num_coup_units)) +
+ggplot(data=data, aes(factor(household_income), response)) +
   geom_boxplot() + 
   xlab("Household Income") + 
-  ylab("Total # coupon units")
+  ylab("Units purchased w coupon/units purchased")
 
-ggplot(data=data, aes(factor(num_members_in_household), total_num_coup_units)) +
+ggplot(data=data, aes(factor(num_members_in_household), response)) +
   geom_boxplot() + 
   xlab("Number of members in household") + 
-  ylab("Total # coupon units")
+  ylab("Units purchased w coupon/units purchased")
 
-ggplot(data=data, aes(factor(male_head_race), total_num_coup_units)) +
+ggplot(data=data, aes(factor(male_head_race), response)) +
   geom_boxplot() + 
   xlab("Male head race") + 
-  ylab("Total # coupon units")
+  ylab("Units purchased w coupon/units purchased")
 
-ggplot(data=data, aes(factor(female_head_race), total_num_coup_units)) +
+ggplot(data=data, aes(factor(female_head_race), response)) +
   geom_boxplot() + 
   xlab("Female head race") + 
-  ylab("Total # coupon units")
+  ylab("Units purchased w coupon/units purchased")
