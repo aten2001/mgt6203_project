@@ -26,10 +26,12 @@ ggplot(data=data, aes(factor(num_members_in_household), response)) +
   xlab("Number of members in household") + 
   ylab("Units purchased w coupon/units purchased")
 
+
 ggplot(data=data, aes(factor(male_head_race), response)) +
   geom_boxplot() + 
   xlab("Male head race") + 
   ylab("Units purchased w coupon/units purchased")
+
 
 ggplot(data=data, aes(factor(female_head_race), response)) +
   geom_boxplot() + 
