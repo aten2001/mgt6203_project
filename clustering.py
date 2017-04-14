@@ -15,16 +15,27 @@ engine = sa.create_engine(ENGINE_STR)
 soup_data = pd.read_sql_query(sql, engine)
 
 # remove response from dataframe
-del (soup_data['total_units_purchased'])
-del (soup_data['total_units_purchased_on_mfr_coup'])
-del (soup_data['total_units_purchased_on_store_coup'])
+# del (soup_data['total_units_purchased'])
+# del (soup_data['total_units_purchased_on_mfr_coup'])
+# del (soup_data['total_units_purchased_on_store_coup'])
+
+
+# response_df = soup_data[['total_units_purchased',
+#                          'total_units_purchased_on_mfr_coup',
+#                          'total_units_purchased_on_store_coup']]
+
+# response_df = soup_data[['total_units_purchased',
+#                          'total_units_purchased_on_mfr_coup']]
+
+response_df = soup_data[['total_units_purchased',
+                         'total_units_purchased_on_store_coup']]
 
 # Code block taken from (with change a variable name)
 # http://stackoverflow.com/questions/26414913/normalize-columns-of-pandas-data-frame
-x = soup_data.values  # returns a numpy array
+x = response_df.values  # returns a numpy array
 min_max_scaler = preprocessing.MinMaxScaler()
 x_scaled = min_max_scaler.fit_transform(x)
-soup_data_normalized = pd.DataFrame(x_scaled, columns=soup_data.columns)
+soup_data_normalized = pd.DataFrame(x_scaled, columns=response_df.columns)
 
 """
 kmeans_3 = cluster.KMeans(n_clusters=3)
