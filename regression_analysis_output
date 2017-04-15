@@ -328,3 +328,46 @@ Multiple R-squared:  0.01022,	Adjusted R-squared:  0.01005
 Interesting takeaways:
 - num_pets is somehow significant 
 - num large appliances is also significant
+
+Removed num_pets:
+
+
+
+Call:
+lm(formula = proportion_purchased_mfr_coup ~ Q2 + Q3 + Q4 + rim_market + 
+    num_large_appliances + num_small_appliances + num_members_in_household + 
+    household_income + primary_head_avg_work_hours, data = data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.04795 -0.02807 -0.01986 -0.00586  1.00371 
+
+Coefficients:
+                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  2.591e-02  2.706e-03   9.576  < 2e-16 ***
+Q2                          -8.530e-03  9.231e-04  -9.241  < 2e-16 ***
+Q3                           3.747e-03  9.674e-04   3.874 0.000107 ***
+Q4                          -3.134e-03  9.135e-04  -3.431 0.000602 ***
+rim_market2                 -1.671e-02  1.218e-03 -13.716  < 2e-16 ***
+num_large_appliances         7.733e-04  1.594e-04   4.852 1.22e-06 ***
+num_small_appliances         3.189e-04  1.394e-04   2.288 0.022144 *  
+num_members_in_household    -6.866e-04  2.780e-04  -2.470 0.013503 *  
+household_income2           -4.856e-03  2.614e-03  -1.858 0.063173 .  
+household_income3            9.441e-04  2.508e-03   0.377 0.706538    
+household_income4           -3.776e-04  2.492e-03  -0.152 0.879576    
+household_income5           -2.729e-03  2.452e-03  -1.113 0.265727    
+household_income6           -3.625e-03  2.503e-03  -1.448 0.147499    
+household_income7           -4.462e-03  2.547e-03  -1.752 0.079836 .  
+household_income8           -9.551e-03  2.632e-03  -3.629 0.000285 ***
+household_income9           -8.999e-03  2.736e-03  -3.289 0.001006 ** 
+household_income10          -8.916e-03  2.844e-03  -3.135 0.001719 ** 
+household_income11          -1.018e-02  2.833e-03  -3.593 0.000327 ***
+household_income12          -3.324e-03  3.313e-03  -1.003 0.315668    
+household_income13          -1.310e-02  4.073e-03  -3.216 0.001300 ** 
+household_income14          -1.169e-02  4.061e-03  -2.879 0.003994 ** 
+primary_head_avg_work_hours -1.263e-04  1.877e-05  -6.729 1.72e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1253 on 134960 degrees of freedom
+Multiple R-squared:  0.01009,	Adjusted R-squared:  0.00994 
