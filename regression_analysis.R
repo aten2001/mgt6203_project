@@ -17,7 +17,7 @@ summary(model)
 
 data$proportion_purchased_mfr_coup = data$total_units_purchased_on_mfr_coup / data$total_units_purchased
 model <- lm(formula = proportion_purchased_mfr_coup ~ Q2 + Q3 + Q4 + rim_market + num_large_appliances + 
-              num_small_appliances + num_pets + num_members_in_household + household_income + 
+              num_small_appliances + num_members_in_household + household_income + 
               primary_head_avg_work_hours, data=data)
 summary(model)
 

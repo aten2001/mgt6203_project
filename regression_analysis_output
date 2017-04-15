@@ -164,8 +164,9 @@ Multiple R-squared:  0.01496,	Adjusted R-squared:  0.01482
 
 ### with all variables
 
+Call:
 lm(formula = proportion_purchased_mfr_coup ~ Q2 + Q3 + Q4 + rim_market + 
-    num_large_appliances + num_small_appliances + num_pets + 
+    num_large_appliances + num_pets + num_small_appliances + 
     num_members_in_household + household_income + brand + primary_head_avg_work_hours, 
     data = data)
 
@@ -181,8 +182,8 @@ Q3                           2.973e-03  9.651e-04   3.080 0.002069 **
 Q4                          -3.369e-03  9.110e-04  -3.698 0.000217 ***
 rim_market2                 -2.131e-02  1.274e-03 -16.728  < 2e-16 ***
 num_large_appliances         7.037e-04  1.590e-04   4.427 9.58e-06 ***
-num_small_appliances         3.325e-04  1.390e-04   2.392 0.016758 *  
 num_pets                    -1.212e-03  3.234e-04  -3.749 0.000178 ***
+num_small_appliances         3.325e-04  1.390e-04   2.392 0.016758 *  
 num_members_in_household    -7.276e-04  2.802e-04  -2.597 0.009413 ** 
 household_income2           -4.472e-03  2.603e-03  -1.718 0.085873 .  
 household_income3            9.375e-04  2.498e-03   0.375 0.707442    
@@ -273,14 +274,19 @@ brand75091                  -3.271e-03  1.139e-01  -0.029 0.977090
 brand75450                   5.726e-03  8.825e-02   0.065 0.948268    
 brand76186                  -2.910e-02  9.134e-02  -0.319 0.750052    
 brand88849                  -6.946e-03  9.592e-02  -0.072 0.942272    
-primary_head_avg_work_hours -1.165e-04  1.882e-05  -6.190 6.03e-10 *** 
+primary_head_avg_work_hours -1.165e-04  1.882e-05  -6.190 6.03e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1248 on 134883 degrees of freedom
+Multiple R-squared:  0.01914,	Adjusted R-squared:  0.01842 
 
 
 After removing brand:
 
 Call:
 lm(formula = proportion_purchased_mfr_coup ~ Q2 + Q3 + Q4 + rim_market + 
-    num_large_appliances + num_small_appliances + num_pets + 
+    num_large_appliances + num_pets + num_small_appliances + 
     num_members_in_household + household_income + primary_head_avg_work_hours, 
     data = data)
 
@@ -296,8 +302,8 @@ Q3                           3.750e-03  9.673e-04   3.877 0.000106 ***
 Q4                          -3.147e-03  9.134e-04  -3.445 0.000571 ***
 rim_market2                 -1.596e-02  1.232e-03 -12.955  < 2e-16 ***
 num_large_appliances         7.712e-04  1.594e-04   4.839 1.31e-06 ***
-num_small_appliances         3.335e-04  1.394e-04   2.392 0.016746 *  
 num_pets                    -1.323e-03  3.242e-04  -4.081 4.49e-05 ***
+num_small_appliances         3.335e-04  1.394e-04   2.392 0.016746 *  
 num_members_in_household    -5.591e-04  2.797e-04  -1.999 0.045621 *  
 household_income2           -4.761e-03  2.614e-03  -1.821 0.068555 .  
 household_income3            1.052e-03  2.508e-03   0.419 0.674925    
@@ -313,6 +319,11 @@ household_income12          -3.395e-03  3.313e-03  -1.025 0.305431
 household_income13          -1.282e-02  4.073e-03  -3.147 0.001652 ** 
 household_income14          -1.134e-02  4.061e-03  -2.793 0.005229 ** 
 primary_head_avg_work_hours -1.178e-04  1.888e-05  -6.237 4.48e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1253 on 134959 degrees of freedom
+Multiple R-squared:  0.01022,	Adjusted R-squared:  0.01005 
 
 Interesting takeaways:
 - num_pets is somehow significant 
