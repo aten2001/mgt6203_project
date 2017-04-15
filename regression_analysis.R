@@ -18,14 +18,14 @@ summary(model)
 data$proportion_purchased_mfr_coup = data$total_units_purchased_on_mfr_coup / data$total_units_purchased
 model <- lm(formula = proportion_purchased_mfr_coup ~ Q2 + Q3 + Q4 + rim_market + num_large_appliances + 
               num_small_appliances + num_pets + num_members_in_household + household_income + 
-              brand + primary_head_avg_work_hours, data=data)
+              primary_head_avg_work_hours, data=data)
 summary(model)
 
 # https://stats.stackexchange.com/questions/66973/difference-between-fixed-effects-models-in-r-plm-and-stata-xtreg
 
 fe_model <- plm(proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + rim_market + num_large_appliances + 
                   num_small_appliances + num_pets + num_members_in_household + household_income + 
-                  brand + primary_head_avg_work_hours, 
+                  primary_head_avg_work_hours, 
                data   = data, 
                method = "within", #fixed effects model
                effect = "time", #does the gamma_i and delta_t parts (I think)
