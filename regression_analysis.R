@@ -35,19 +35,19 @@ cluster_data$k5 = as.factor(cluster_data$k5)
 cluster_data$k8 = as.factor(cluster_data$k8)
 
 # k = 2
-model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + rim_market +  
+model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + rim_market +  weekday_shopper + num_large_appliances +
               num_small_appliances + num_members_in_household + household_income + 
               primary_head_avg_work_hours + k2, data=cluster_data)
 summary(model)
 
 # k = 5
-model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + rim_market +  
+model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + rim_market + weekday_shopper + num_large_appliances + 
               num_small_appliances + num_members_in_household + household_income + 
               primary_head_avg_work_hours + k5, data=cluster_data)
 summary(model)
 
 # k = 8
-model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + rim_market +  
+model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + rim_market + weekday_shopper + num_large_appliances +  
               num_small_appliances + num_members_in_household + household_income + 
               primary_head_avg_work_hours + k8, data=cluster_data)
 summary(model)
@@ -63,42 +63,42 @@ cluster_6 = cluster_data[cluster_data$k8 == 6, ]
 cluster_7 = cluster_data[cluster_data$k8 == 7, ]
 
 # cluster 0 only had one value for rim_market so I removed it
-model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + #rim_market +  
+model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
               num_small_appliances + num_members_in_household + household_income + 
               primary_head_avg_work_hours, data=cluster_0)
 summary(model)
 
-model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + #rim_market +  
+model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
               num_small_appliances + num_members_in_household + household_income + 
               primary_head_avg_work_hours, data=cluster_1)
 summary(model)
 
-model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + #rim_market +  
+model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
               num_small_appliances + num_members_in_household + household_income + 
               primary_head_avg_work_hours, data=cluster_2)
 summary(model)
 
-model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + #rim_market +  
+model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
               num_small_appliances + num_members_in_household + household_income + 
               primary_head_avg_work_hours, data=cluster_3)
 summary(model)
 
-model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + #rim_market +  
+model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
               num_small_appliances + num_members_in_household + household_income + 
               primary_head_avg_work_hours, data=cluster_4)
 summary(model)
 
-model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + #rim_market +  
+model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
               num_small_appliances + num_members_in_household + household_income + 
               primary_head_avg_work_hours, data=cluster_5)
 summary(model)
 
-model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + #rim_market +  
+model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
               num_small_appliances + num_members_in_household + household_income + 
               primary_head_avg_work_hours, data=cluster_6)
 summary(model)
 
-model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + #rim_market +  
+model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
               num_small_appliances + num_members_in_household + household_income + 
               primary_head_avg_work_hours, data=cluster_7)
 summary(model)

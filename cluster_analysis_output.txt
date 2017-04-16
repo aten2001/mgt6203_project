@@ -4,97 +4,103 @@ k = 2
 
 Coefficients: (1 not defined because of singularities)
                               Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                  6.727e-02  4.796e-03  14.025  < 2e-16 ***
-Q2                          -1.122e-02  1.709e-03  -6.564 5.25e-11 ***
-Q3                          -2.809e-02  1.791e-03 -15.682  < 2e-16 ***
-Q4                           3.449e-03  1.716e-03   2.010  0.04439 *  
-rim_market2                  3.991e-02  1.942e-03  20.551  < 2e-16 ***
-num_small_appliances         5.173e-04  2.434e-04   2.125  0.03361 *  
-num_members_in_household    -7.847e-03  5.153e-04 -15.227  < 2e-16 ***
-household_income2            8.838e-03  4.778e-03   1.850  0.06436 .  
-household_income3            2.921e-03  4.567e-03   0.640  0.52241    
-household_income4            1.249e-02  4.530e-03   2.758  0.00582 ** 
-household_income5            8.805e-03  4.455e-03   1.976  0.04811 *  
-household_income6            1.425e-02  4.548e-03   3.133  0.00173 ** 
-household_income7            1.095e-02  4.616e-03   2.371  0.01773 *  
-household_income8            3.708e-03  4.762e-03   0.779  0.43616    
-household_income9            1.437e-02  4.976e-03   2.889  0.00387 ** 
-household_income10           1.700e-04  5.159e-03   0.033  0.97372    
-household_income11           1.289e-02  5.153e-03   2.501  0.01239 *  
-household_income12           1.744e-02  6.068e-03   2.874  0.00405 ** 
-household_income13          -1.186e-02  7.488e-03  -1.584  0.11317    
-household_income14           9.299e-03  7.419e-03   1.253  0.21007    
-primary_head_avg_work_hours -3.635e-04  3.473e-05 -10.467  < 2e-16 ***
+(Intercept)                  6.059e-02  5.186e-03  11.683  < 2e-16 ***
+Q2                          -1.125e-02  1.709e-03  -6.583 4.64e-11 ***
+Q3                          -2.809e-02  1.791e-03 -15.686  < 2e-16 ***
+Q4                           3.435e-03  1.716e-03   2.002 0.045298 *  
+rim_market2                  4.115e-02  2.254e-03  18.257  < 2e-16 ***
+weekday_shopper              5.782e-03  1.651e-03   3.502 0.000461 ***
+num_large_appliances         2.920e-04  2.944e-04   0.992 0.321414    
+num_small_appliances         4.375e-04  2.577e-04   1.697 0.089631 .  
+num_members_in_household    -7.901e-03  5.189e-04 -15.227  < 2e-16 ***
+household_income2            8.464e-03  4.784e-03   1.769 0.076841 .  
+household_income3            2.563e-03  4.577e-03   0.560 0.575475    
+household_income4            1.207e-02  4.560e-03   2.647 0.008114 ** 
+household_income5            8.389e-03  4.486e-03   1.870 0.061485 .  
+household_income6            1.382e-02  4.589e-03   3.011 0.002608 ** 
+household_income7            1.049e-02  4.668e-03   2.248 0.024588 *  
+household_income8            3.050e-03  4.823e-03   0.632 0.527173    
+household_income9            1.402e-02  5.030e-03   2.788 0.005304 ** 
+household_income10          -2.053e-04  5.230e-03  -0.039 0.968685    
+household_income11           1.202e-02  5.220e-03   2.303 0.021277 *  
+household_income12           1.747e-02  6.120e-03   2.855 0.004310 ** 
+household_income13          -1.288e-02  7.512e-03  -1.714 0.086514 .  
+household_income14           8.316e-03  7.464e-03   1.114 0.265231    
+primary_head_avg_work_hours -3.343e-04  3.566e-05  -9.372  < 2e-16 ***
 k21                                 NA         NA      NA       NA    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.2154 on 115234 degrees of freedom
-Multiple R-squared:  0.01488,	Adjusted R-squared:  0.01471 
+Residual standard error: 0.2154 on 115232 degrees of freedom
+Multiple R-squared:  0.01499,	Adjusted R-squared:  0.01481 
 
 k = 5
 
 Coefficients: (2 not defined because of singularities)
                               Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                  7.210e-02  5.330e-03  13.528  < 2e-16 ***
-Q2                          -1.286e-02  2.769e-03  -4.645 3.41e-06 ***
-Q3                          -3.189e-02  2.565e-03 -12.433  < 2e-16 ***
-Q4                          -2.427e-04  2.478e-03  -0.098  0.92199    
-rim_market2                  3.702e-02  2.451e-03  15.104  < 2e-16 ***
-num_small_appliances         5.164e-04  2.434e-04   2.121  0.03389 *  
-num_members_in_household    -7.842e-03  5.153e-04 -15.218  < 2e-16 ***
-household_income2            8.880e-03  4.778e-03   1.859  0.06310 .  
-household_income3            2.968e-03  4.567e-03   0.650  0.51576    
-household_income4            1.253e-02  4.530e-03   2.765  0.00569 ** 
-household_income5            8.834e-03  4.455e-03   1.983  0.04737 *  
-household_income6            1.430e-02  4.548e-03   3.143  0.00167 ** 
-household_income7            1.098e-02  4.616e-03   2.378  0.01741 *  
-household_income8            3.755e-03  4.762e-03   0.788  0.43041    
-household_income9            1.439e-02  4.976e-03   2.892  0.00383 ** 
-household_income10           2.374e-04  5.159e-03   0.046  0.96329    
-household_income11           1.291e-02  5.153e-03   2.506  0.01223 *  
-household_income12           1.751e-02  6.068e-03   2.886  0.00391 ** 
-household_income13          -1.178e-02  7.488e-03  -1.573  0.11563    
-household_income14           9.406e-03  7.419e-03   1.268  0.20485    
-primary_head_avg_work_hours -3.632e-04  3.473e-05 -10.458  < 2e-16 ***
-k51                         -6.172e-03  2.986e-03  -2.067  0.03871 *  
+(Intercept)                  6.545e-02  5.681e-03  11.520  < 2e-16 ***
+Q2                          -1.294e-02  2.769e-03  -4.672 2.98e-06 ***
+Q3                          -3.192e-02  2.564e-03 -12.446  < 2e-16 ***
+Q4                          -2.850e-04  2.478e-03  -0.115 0.908423    
+rim_market2                  3.825e-02  2.704e-03  14.146  < 2e-16 ***
+weekday_shopper              5.795e-03  1.651e-03   3.510 0.000448 ***
+num_large_appliances         2.921e-04  2.944e-04   0.992 0.321238    
+num_small_appliances         4.366e-04  2.577e-04   1.694 0.090254 .  
+num_members_in_household    -7.897e-03  5.189e-04 -15.218  < 2e-16 ***
+household_income2            8.506e-03  4.784e-03   1.778 0.075398 .  
+household_income3            2.610e-03  4.577e-03   0.570 0.568511    
+household_income4            1.210e-02  4.560e-03   2.654 0.007944 ** 
+household_income5            8.418e-03  4.486e-03   1.877 0.060572 .  
+household_income6            1.386e-02  4.589e-03   3.021 0.002523 ** 
+household_income7            1.052e-02  4.668e-03   2.255 0.024162 *  
+household_income8            3.097e-03  4.823e-03   0.642 0.520841    
+household_income9            1.404e-02  5.030e-03   2.791 0.005250 ** 
+household_income10          -1.368e-04  5.230e-03  -0.026 0.979129    
+household_income11           1.205e-02  5.220e-03   2.308 0.021027 *  
+household_income12           1.754e-02  6.120e-03   2.866 0.004154 ** 
+household_income13          -1.280e-02  7.512e-03  -1.704 0.088466 .  
+household_income14           8.424e-03  7.464e-03   1.129 0.259093    
+primary_head_avg_work_hours -3.339e-04  3.566e-05  -9.362  < 2e-16 ***
+k51                         -6.218e-03  2.986e-03  -2.083 0.037284 *  
 k52                                 NA         NA      NA       NA    
 k53                                 NA         NA      NA       NA    
-k54                         -3.454e-03  3.366e-03  -1.026  0.30482    
+k54                         -3.426e-03  3.366e-03  -1.018 0.308726    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.2154 on 115232 degrees of freedom
-Multiple R-squared:  0.01492,	Adjusted R-squared:  0.01473 
+Residual standard error: 0.2154 on 115230 degrees of freedom
+Multiple R-squared:  0.01503,	Adjusted R-squared:  0.01483 
 
 k - 8
 
 Coefficients: (4 not defined because of singularities)
                               Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                  6.597e-02  4.850e-03  13.601  < 2e-16 ***
-Q2                          -1.444e-02  3.718e-03  -3.885 0.000103 ***
-Q3                          -3.919e-02  3.813e-03 -10.280  < 2e-16 ***
-Q4                           2.723e-03  2.224e-03   1.224 0.220797    
-rim_market2                  4.477e-02  3.051e-03  14.672  < 2e-16 ***
-num_small_appliances         5.147e-04  2.434e-04   2.114 0.034476 *  
-num_members_in_household    -7.839e-03  5.153e-04 -15.215  < 2e-16 ***
-household_income2            8.900e-03  4.778e-03   1.863 0.062493 .  
-household_income3            2.980e-03  4.567e-03   0.653 0.514076    
-household_income4            1.248e-02  4.530e-03   2.754 0.005880 ** 
-household_income5            8.815e-03  4.455e-03   1.979 0.047850 *  
-household_income6            1.428e-02  4.548e-03   3.141 0.001684 ** 
-household_income7            1.098e-02  4.616e-03   2.379 0.017377 *  
-household_income8            3.746e-03  4.761e-03   0.787 0.431389    
-household_income9            1.439e-02  4.975e-03   2.892 0.003829 ** 
-household_income10           3.408e-04  5.159e-03   0.066 0.947327    
-household_income11           1.294e-02  5.152e-03   2.512 0.012006 *  
-household_income12           1.745e-02  6.068e-03   2.877 0.004020 ** 
-household_income13          -1.188e-02  7.488e-03  -1.586 0.112641    
-household_income14           9.387e-03  7.418e-03   1.265 0.205755    
-primary_head_avg_work_hours -3.638e-04  3.473e-05 -10.475  < 2e-16 ***
-k81                         -1.580e-03  3.496e-03  -0.452 0.651284    
-k82                          4.299e-03  3.826e-03   1.124 0.261149    
-k83                          1.696e-02  3.979e-03   4.262 2.03e-05 ***
+(Intercept)                  5.925e-02  5.237e-03  11.313  < 2e-16 ***
+Q2                          -1.449e-02  3.718e-03  -3.897 9.76e-05 ***
+Q3                          -3.920e-02  3.813e-03 -10.283  < 2e-16 ***
+Q4                           2.721e-03  2.224e-03   1.224 0.221129    
+rim_market2                  4.601e-02  3.258e-03  14.122  < 2e-16 ***
+weekday_shopper              5.807e-03  1.651e-03   3.518 0.000435 ***
+num_large_appliances         2.934e-04  2.944e-04   0.996 0.319054    
+num_small_appliances         4.345e-04  2.577e-04   1.686 0.091782 .  
+num_members_in_household    -7.895e-03  5.189e-04 -15.215  < 2e-16 ***
+household_income2            8.524e-03  4.783e-03   1.782 0.074742 .  
+household_income3            2.620e-03  4.577e-03   0.573 0.566960    
+household_income4            1.205e-02  4.559e-03   2.644 0.008206 ** 
+household_income5            8.397e-03  4.486e-03   1.872 0.061226 .  
+household_income6            1.385e-02  4.589e-03   3.018 0.002547 ** 
+household_income7            1.052e-02  4.668e-03   2.255 0.024148 *  
+household_income8            3.085e-03  4.823e-03   0.640 0.522354    
+household_income9            1.404e-02  5.030e-03   2.791 0.005260 ** 
+household_income10          -3.607e-05  5.230e-03  -0.007 0.994497    
+household_income11           1.207e-02  5.220e-03   2.313 0.020716 *  
+household_income12           1.748e-02  6.119e-03   2.857 0.004276 ** 
+household_income13          -1.290e-02  7.511e-03  -1.717 0.085974 .  
+household_income14           8.401e-03  7.464e-03   1.125 0.260382    
+primary_head_avg_work_hours -3.344e-04  3.566e-05  -9.377  < 2e-16 ***
+k81                         -1.547e-03  3.496e-03  -0.443 0.658030    
+k82                          4.340e-03  3.826e-03   1.134 0.256613    
+k83                          1.699e-02  3.979e-03   4.269 1.96e-05 ***
 k84                                 NA         NA      NA       NA    
 k85                                 NA         NA      NA       NA    
 k86                                 NA         NA      NA       NA    
@@ -102,8 +108,8 @@ k87                                 NA         NA      NA       NA
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.2154 on 115231 degrees of freedom
-Multiple R-squared:  0.01507,	Adjusted R-squared:  0.01488 
+Residual standard error: 0.2153 on 115229 degrees of freedom
+Multiple R-squared:  0.01519,	Adjusted R-squared:  0.01497 
 
 
 
@@ -111,237 +117,370 @@ Multiple R-squared:  0.01507,	Adjusted R-squared:  0.01488
 
 ## model per cluster
 
-cluster 0
+> model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
++               num_small_appliances + num_members_in_household + household_income + 
++               primary_head_avg_work_hours, data=cluster_0)
+> summary(model)
+
+Call:
+lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + 
+    weekday_shopper + num_large_appliances + num_small_appliances + 
+    num_members_in_household + household_income + primary_head_avg_work_hours, 
+    data = cluster_0)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.08686 -0.06199 -0.05107 -0.03778  0.98527 
+
 Coefficients: (3 not defined because of singularities)
                               Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                  8.182e-02  1.115e-02   7.339 2.27e-13 ***
+(Intercept)                  8.101e-02  1.208e-02   6.706 2.07e-11 ***
 Q2                                  NA         NA      NA       NA    
 Q3                                  NA         NA      NA       NA    
 Q4                                  NA         NA      NA       NA    
-num_small_appliances         4.982e-04  5.308e-04   0.938   0.3480    
-num_members_in_household    -8.025e-03  1.257e-03  -6.382 1.79e-10 ***
-household_income2           -8.708e-03  1.170e-02  -0.744   0.4567    
-household_income3           -9.645e-03  1.135e-02  -0.849   0.3957    
-household_income4            6.073e-04  1.130e-02   0.054   0.9571    
-household_income5           -1.715e-02  1.108e-02  -1.549   0.1215    
-household_income6            1.495e-03  1.128e-02   0.133   0.8946    
-household_income7           -8.645e-03  1.149e-02  -0.752   0.4518    
-household_income8           -2.155e-02  1.191e-02  -1.810   0.0703 .  
-household_income9            2.968e-03  1.235e-02   0.240   0.8100    
-household_income10          -1.196e-02  1.279e-02  -0.934   0.3501    
-household_income11          -7.111e-03  1.305e-02  -0.545   0.5858    
-household_income12          -4.664e-03  1.547e-02  -0.302   0.7630    
-household_income13          -1.468e-02  2.071e-02  -0.709   0.4786    
-household_income14          -2.454e-02  2.103e-02  -1.167   0.2433    
-primary_head_avg_work_hours -1.638e-04  8.969e-05  -1.826   0.0678 .  
+weekday_shopper              4.870e-03  4.141e-03   1.176   0.2396    
+num_large_appliances        -1.062e-03  6.190e-04  -1.716   0.0863 .  
+num_small_appliances         8.060e-04  5.596e-04   1.440   0.1498    
+num_members_in_household    -7.682e-03  1.270e-03  -6.047 1.51e-09 ***
+household_income2           -7.976e-03  1.171e-02  -0.681   0.4957    
+household_income3           -8.611e-03  1.137e-02  -0.757   0.4488    
+household_income4            2.929e-03  1.136e-02   0.258   0.7965    
+household_income5           -1.481e-02  1.115e-02  -1.328   0.1840    
+household_income6            4.277e-03  1.138e-02   0.376   0.7071    
+household_income7           -5.460e-03  1.162e-02  -0.470   0.6384    
+household_income8           -1.788e-02  1.207e-02  -1.481   0.1386    
+household_income9            6.187e-03  1.247e-02   0.496   0.6199    
+household_income10          -7.820e-03  1.298e-02  -0.603   0.5468    
+household_income11          -2.953e-03  1.324e-02  -0.223   0.8235    
+household_income12          -8.964e-04  1.559e-02  -0.057   0.9542    
+household_income13          -1.309e-02  2.075e-02  -0.631   0.5283    
+household_income14          -2.121e-02  2.112e-02  -1.004   0.3153    
+primary_head_avg_work_hours -1.584e-04  9.183e-05  -1.725   0.0846 .  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.1987 on 15473 degrees of freedom
-Multiple R-squared:  0.005009,	Adjusted R-squared:  0.00398 
+Residual standard error: 0.1986 on 15471 degrees of freedom
+Multiple R-squared:  0.005284,	Adjusted R-squared:  0.004126 
+F-statistic: 4.565 on 18 and 15471 DF,  p-value: 3.814e-10
 
-cluster 1
+> model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
++               num_small_appliances + num_members_in_household + household_income + 
++               primary_head_avg_work_hours, data=cluster_1)
+> summary(model)
+
+Call:
+lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + 
+    weekday_shopper + num_large_appliances + num_small_appliances + 
+    num_members_in_household + household_income + primary_head_avg_work_hours, 
+    data = cluster_1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.14899 -0.10381 -0.08824 -0.07007  0.96377 
+
 Coefficients: (3 not defined because of singularities)
                               Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                  0.1268389  0.0153456   8.266  < 2e-16 ***
+(Intercept)                  0.1210049  0.0164347   7.363 1.89e-13 ***
 Q2                                  NA         NA      NA       NA    
 Q3                                  NA         NA      NA       NA    
 Q4                                  NA         NA      NA       NA    
-num_small_appliances         0.0003294  0.0012709   0.259    0.795    
-num_members_in_household    -0.0097638  0.0018730  -5.213 1.88e-07 ***
-household_income2            0.0266083  0.0170900   1.557    0.120    
-household_income3           -0.0227282  0.0158147  -1.437    0.151    
-household_income4            0.0064323  0.0155772   0.413    0.680    
-household_income5            0.0022180  0.0154458   0.144    0.886    
-household_income6            0.0024912  0.0157953   0.158    0.875    
-household_income7           -0.0040387  0.0160011  -0.252    0.801    
-household_income8           -0.0004076  0.0164263  -0.025    0.980    
-household_income9            0.0191628  0.0171360   1.118    0.263    
-household_income10          -0.0169325  0.0180023  -0.941    0.347    
-household_income11          -0.0011547  0.0173032  -0.067    0.947    
-household_income12           0.0279844  0.0204358   1.369    0.171    
-household_income13          -0.0131095  0.0244252  -0.537    0.591    
-household_income14           0.0062486  0.0230808   0.271    0.787    
-primary_head_avg_work_hours -0.0005076  0.0001158  -4.385 1.17e-05 ***
+weekday_shopper              0.0104017  0.0056272   1.848   0.0646 .  
+num_large_appliances        -0.0021036  0.0018481  -1.138   0.2550    
+num_small_appliances         0.0008133  0.0013320   0.611   0.5415    
+num_members_in_household    -0.0096344  0.0018795  -5.126 2.99e-07 ***
+household_income2            0.0281710  0.0172050   1.637   0.1016    
+household_income3           -0.0207536  0.0159704  -1.300   0.1938    
+household_income4            0.0088300  0.0157537   0.561   0.5751    
+household_income5            0.0048220  0.0156272   0.309   0.7577    
+household_income6            0.0056477  0.0160226   0.352   0.7245    
+household_income7           -0.0005439  0.0162672  -0.033   0.9733    
+household_income8            0.0028764  0.0167316   0.172   0.8635    
+household_income9            0.0240973  0.0174793   1.379   0.1680    
+household_income10          -0.0122535  0.0183676  -0.667   0.5047    
+household_income11           0.0017622  0.0176461   0.100   0.9205    
+household_income12           0.0335234  0.0207402   1.616   0.1060    
+household_income13          -0.0096066  0.0246964  -0.389   0.6973    
+household_income14           0.0098882  0.0234441   0.422   0.6732    
+primary_head_avg_work_hours -0.0004761  0.0001197  -3.977 7.01e-05 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.2673 on 15275 degrees of freedom
-Multiple R-squared:  0.005605,	Adjusted R-squared:  0.004564 
+Residual standard error: 0.2673 on 15273 degrees of freedom
+Multiple R-squared:  0.005911,	Adjusted R-squared:  0.004739 
+F-statistic: 5.045 on 18 and 15273 DF,  p-value: 1.13e-11
 
-cluster 2
+> model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
++               num_small_appliances + num_members_in_household + household_income + 
++               primary_head_avg_work_hours, data=cluster_2)
+> summary(model)
+
+Call:
+lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + 
+    weekday_shopper + num_large_appliances + num_small_appliances + 
+    num_members_in_household + household_income + primary_head_avg_work_hours, 
+    data = cluster_2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.08186 -0.04986 -0.03736 -0.02589  1.00037 
+
 Coefficients: (3 not defined because of singularities)
                               Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                  5.055e-02  9.591e-03   5.271 1.38e-07 ***
+(Intercept)                  3.960e-02  1.042e-02   3.802 0.000144 ***
 Q2                                  NA         NA      NA       NA    
 Q3                                  NA         NA      NA       NA    
 Q4                                  NA         NA      NA       NA    
-num_small_appliances         8.697e-04  4.608e-04   1.887   0.0591 .  
-num_members_in_household    -8.925e-03  1.110e-03  -8.038 9.72e-16 ***
-household_income2            4.002e-03  1.002e-02   0.399   0.6897    
-household_income3            1.392e-02  9.776e-03   1.424   0.1545    
-household_income4            2.459e-02  9.738e-03   2.525   0.0116 *  
-household_income5            1.080e-02  9.512e-03   1.135   0.2564    
-household_income6            1.673e-02  9.697e-03   1.725   0.0845 .  
-household_income7            1.946e-02  9.875e-03   1.971   0.0488 *  
-household_income8            1.139e-02  1.027e-02   1.109   0.2673    
-household_income9            1.769e-02  1.078e-02   1.642   0.1007    
-household_income10           8.550e-03  1.107e-02   0.772   0.4400    
-household_income11           2.382e-02  1.132e-02   2.105   0.0353 *  
-household_income12           1.028e-02  1.369e-02   0.751   0.4528    
-household_income13          -1.153e-02  1.708e-02  -0.675   0.4996    
-household_income14          -3.721e-03  1.906e-02  -0.195   0.8452    
-primary_head_avg_work_hours -4.225e-04  7.828e-05  -5.397 6.86e-08 ***
+weekday_shopper              6.691e-03  3.619e-03   1.849 0.064462 .  
+num_large_appliances         1.148e-03  5.474e-04   2.098 0.035911 *  
+num_small_appliances         5.533e-04  4.856e-04   1.139 0.254538    
+num_members_in_household    -9.210e-03  1.119e-03  -8.227  < 2e-16 ***
+household_income2            3.192e-03  1.003e-02   0.318 0.750306    
+household_income3            1.316e-02  9.784e-03   1.345 0.178771    
+household_income4            2.261e-02  9.796e-03   2.308 0.021024 *  
+household_income5            8.630e-03  9.578e-03   0.901 0.367541    
+household_income6            1.423e-02  9.782e-03   1.454 0.145846    
+household_income7            1.666e-02  9.993e-03   1.668 0.095396 .  
+household_income8            8.113e-03  1.040e-02   0.780 0.435535    
+household_income9            1.471e-02  1.089e-02   1.350 0.177001    
+household_income10           5.165e-03  1.124e-02   0.459 0.646021    
+household_income11           2.017e-02  1.148e-02   1.757 0.078869 .  
+household_income12           7.599e-03  1.379e-02   0.551 0.581653    
+household_income13          -1.435e-02  1.711e-02  -0.838 0.401892    
+household_income14          -7.775e-03  1.916e-02  -0.406 0.684906    
+primary_head_avg_work_hours -3.779e-04  8.014e-05  -4.715 2.43e-06 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.1803 on 16758 degrees of freedom
-Multiple R-squared:  0.007056,	Adjusted R-squared:  0.006108 
+Residual standard error: 0.1803 on 16756 degrees of freedom
+Multiple R-squared:  0.007526,	Adjusted R-squared:  0.00646 
+F-statistic: 7.059 on 18 and 16756 DF,  p-value: < 2.2e-16
 
-cluster 3
+> model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
++               num_small_appliances + num_members_in_household + household_income + 
++               primary_head_avg_work_hours, data=cluster_3)
+> summary(model)
+
+Call:
+lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + 
+    weekday_shopper + num_large_appliances + num_small_appliances + 
+    num_members_in_household + household_income + primary_head_avg_work_hours, 
+    data = cluster_3)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.05334 -0.03295 -0.02659 -0.01991  0.99147 
+
 Coefficients: (3 not defined because of singularities)
                               Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                  3.412e-02  8.606e-03   3.965 7.38e-05 ***
+(Intercept)                  3.082e-02  9.309e-03   3.311 0.000933 ***
 Q2                                  NA         NA      NA       NA    
 Q3                                  NA         NA      NA       NA    
 Q4                                  NA         NA      NA       NA    
-num_small_appliances         1.426e-05  4.168e-04   0.034 0.972709    
-num_members_in_household    -4.663e-03  9.843e-04  -4.737 2.19e-06 ***
-household_income2            1.993e-03  9.114e-03   0.219 0.826913    
-household_income3            1.306e-02  8.837e-03   1.478 0.139475    
-household_income4            1.436e-02  8.843e-03   1.624 0.104335    
-household_income5            9.800e-03  8.630e-03   1.136 0.256160    
-household_income6            2.154e-02  8.842e-03   2.436 0.014880 *  
-household_income7            1.342e-02  8.979e-03   1.495 0.135034    
-household_income8            6.540e-03  9.322e-03   0.702 0.482956    
-household_income9            1.559e-02  9.717e-03   1.604 0.108766    
-household_income10           1.303e-02  1.018e-02   1.280 0.200625    
-household_income11           2.363e-02  1.030e-02   2.294 0.021831 *  
-household_income12           1.455e-02  1.215e-02   1.198 0.231039    
-household_income13           7.386e-03  1.518e-02   0.487 0.626524    
-household_income14           1.609e-02  1.717e-02   0.937 0.348669    
-primary_head_avg_work_hours -2.464e-04  7.037e-05  -3.501 0.000465 ***
+weekday_shopper              3.469e-04  3.244e-03   0.107 0.914849    
+num_large_appliances         8.287e-04  4.952e-04   1.674 0.094240 .  
+num_small_appliances        -2.194e-04  4.396e-04  -0.499 0.617731    
+num_members_in_household    -4.891e-03  9.939e-04  -4.922 8.68e-07 ***
+household_income2            1.267e-03  9.124e-03   0.139 0.889559    
+household_income3            1.211e-02  8.855e-03   1.368 0.171466    
+household_income4            1.257e-02  8.911e-03   1.410 0.158464    
+household_income5            7.878e-03  8.708e-03   0.905 0.365609    
+household_income6            1.932e-02  8.943e-03   2.160 0.030765 *  
+household_income7            1.096e-02  9.103e-03   1.204 0.228489    
+household_income8            3.758e-03  9.473e-03   0.397 0.691575    
+household_income9            1.295e-02  9.847e-03   1.315 0.188431    
+household_income10           9.927e-03  1.036e-02   0.958 0.337944    
+household_income11           2.049e-02  1.047e-02   1.956 0.050427 .  
+household_income12           1.184e-02  1.227e-02   0.965 0.334520    
+household_income13           5.612e-03  1.522e-02   0.369 0.712269    
+household_income14           1.338e-02  1.725e-02   0.776 0.437899    
+primary_head_avg_work_hours -2.328e-04  7.215e-05  -3.226 0.001258 ** 
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.15 on 14282 degrees of freedom
-Multiple R-squared:  0.003504,	Adjusted R-squared:  0.002388 
+Residual standard error: 0.15 on 14280 degrees of freedom
+Multiple R-squared:  0.003701,	Adjusted R-squared:  0.002445 
+F-statistic: 2.947 on 18 and 14280 DF,  p-value: 2.644e-05
 
+> model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
++               num_small_appliances + num_members_in_household + household_income + 
++               primary_head_avg_work_hours, data=cluster_4)
+> summary(model)
 
-cluster 4
+Call:
+lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + 
+    weekday_shopper + num_large_appliances + num_small_appliances + 
+    num_members_in_household + household_income + primary_head_avg_work_hours, 
+    data = cluster_4)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.08551 -0.05881 -0.04752 -0.03614  0.98857 
+
 Coefficients: (3 not defined because of singularities)
                               Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                  5.121e-02  9.067e-03   5.648 1.64e-08 ***
+(Intercept)                  4.347e-02  9.743e-03   4.462 8.15e-06 ***
 Q2                                  NA         NA      NA       NA    
 Q3                                  NA         NA      NA       NA    
 Q4                                  NA         NA      NA       NA    
-num_small_appliances         5.807e-04  4.234e-04   1.372 0.170231    
-num_members_in_household    -6.535e-03  9.993e-04  -6.539 6.31e-11 ***
-household_income2            1.656e-02  9.505e-03   1.742 0.081441 .  
-household_income3            2.159e-02  9.208e-03   2.345 0.019030 *  
-household_income4            2.484e-02  9.182e-03   2.705 0.006832 ** 
-household_income5            2.264e-02  8.997e-03   2.517 0.011859 *  
-household_income6            3.047e-02  9.134e-03   3.336 0.000851 ***
-household_income7            2.248e-02  9.299e-03   2.418 0.015634 *  
-household_income8            1.802e-02  9.619e-03   1.874 0.060990 .  
-household_income9            1.588e-02  1.001e-02   1.586 0.112775    
-household_income10           2.123e-02  1.028e-02   2.064 0.038984 *  
-household_income11           2.051e-02  1.058e-02   1.939 0.052498 .  
-household_income12           1.564e-02  1.229e-02   1.273 0.203145    
-household_income13          -1.566e-03  1.605e-02  -0.098 0.922279    
-household_income14           1.932e-02  1.665e-02   1.161 0.245803    
-primary_head_avg_work_hours -4.691e-04  7.124e-05  -6.585 4.64e-11 ***
+weekday_shopper              5.450e-03  3.308e-03   1.648  0.09942 .  
+num_large_appliances         7.281e-04  5.014e-04   1.452  0.14652    
+num_small_appliances         3.752e-04  4.459e-04   0.841  0.40014    
+num_members_in_household    -6.726e-03  1.010e-03  -6.657 2.85e-11 ***
+household_income2            1.583e-02  9.515e-03   1.663  0.09625 .  
+household_income3            2.076e-02  9.224e-03   2.250  0.02444 *  
+household_income4            2.343e-02  9.250e-03   2.533  0.01131 *  
+household_income5            2.116e-02  9.072e-03   2.333  0.01966 *  
+household_income6            2.859e-02  9.235e-03   3.096  0.00196 ** 
+household_income7            2.044e-02  9.428e-03   2.169  0.03013 *  
+household_income8            1.573e-02  9.771e-03   1.610  0.10749    
+household_income9            1.381e-02  1.013e-02   1.363  0.17295    
+household_income10           1.902e-02  1.046e-02   1.819  0.06892 .  
+household_income11           1.792e-02  1.076e-02   1.666  0.09577 .  
+household_income12           1.405e-02  1.242e-02   1.132  0.25781    
+household_income13          -3.680e-03  1.609e-02  -0.229  0.81905    
+household_income14           1.680e-02  1.675e-02   1.003  0.31595    
+primary_head_avg_work_hours -4.348e-04  7.303e-05  -5.953 2.66e-09 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.1963 on 23765 degrees of freedom
-Multiple R-squared:  0.004852,	Adjusted R-squared:  0.004183 
+Residual standard error: 0.1963 on 23763 degrees of freedom
+Multiple R-squared:  0.005059,	Adjusted R-squared:  0.004305 
+F-statistic: 6.712 on 18 and 23763 DF,  p-value: < 2.2e-16
 
-cluster 5
+> model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
++               num_small_appliances + num_members_in_household + household_income + 
++               primary_head_avg_work_hours, data=cluster_5)
+> summary(model)
+
+Call:
+lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + 
+    weekday_shopper + num_large_appliances + num_small_appliances + 
+    num_members_in_household + household_income + primary_head_avg_work_hours, 
+    data = cluster_5)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.13182 -0.09108 -0.07645 -0.05811  0.96890 
+
 Coefficients: (3 not defined because of singularities)
                               Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                  0.0888625  0.0175840   5.054 4.41e-07 ***
+(Intercept)                  0.0794483  0.0188616   4.212 2.55e-05 ***
 Q2                                  NA         NA      NA       NA    
 Q3                                  NA         NA      NA       NA    
 Q4                                  NA         NA      NA       NA    
-num_small_appliances        -0.0012915  0.0015328  -0.843 0.399493    
-num_members_in_household    -0.0088004  0.0022134  -3.976 7.06e-05 ***
-household_income2            0.0533666  0.0193372   2.760 0.005794 ** 
-household_income3            0.0136177  0.0178813   0.762 0.446341    
-household_income4            0.0296244  0.0176916   1.674 0.094065 .  
-household_income5            0.0533208  0.0174789   3.051 0.002290 ** 
-household_income6            0.0245122  0.0180613   1.357 0.174758    
-household_income7            0.0423550  0.0181063   2.339 0.019343 *  
-household_income8            0.0323312  0.0186590   1.733 0.083172 .  
-household_income9            0.0534838  0.0198197   2.699 0.006977 ** 
-household_income10           0.0116366  0.0207601   0.561 0.575134    
-household_income11           0.0326214  0.0200532   1.627 0.103823    
-household_income12           0.0605767  0.0242154   2.502 0.012380 *  
-household_income13           0.0221739  0.0283031   0.783 0.433386    
-household_income14           0.0298174  0.0255622   1.166 0.243456    
-primary_head_avg_work_hours -0.0004760  0.0001374  -3.465 0.000532 ***
+weekday_shopper              0.0084620  0.0068637   1.233  0.21766    
+num_large_appliances         0.0012789  0.0021950   0.583  0.56015    
+num_small_appliances        -0.0015394  0.0016065  -0.958  0.33798    
+num_members_in_household    -0.0089428  0.0022173  -4.033 5.54e-05 ***
+household_income2            0.0513376  0.0195186   2.630  0.00855 ** 
+household_income3            0.0113314  0.0181217   0.625  0.53179    
+household_income4            0.0271666  0.0179802   1.511  0.13084    
+household_income5            0.0512348  0.0177210   2.891  0.00385 ** 
+household_income6            0.0225562  0.0183832   1.227  0.21985    
+household_income7            0.0400643  0.0184726   2.169  0.03012 *  
+household_income8            0.0292964  0.0191244   1.532  0.12558    
+household_income9            0.0513272  0.0202989   2.529  0.01147 *  
+household_income10           0.0091804  0.0212908   0.431  0.66634    
+household_income11           0.0292620  0.0205008   1.427  0.15351    
+household_income12           0.0590353  0.0246538   2.395  0.01666 *  
+household_income13           0.0186069  0.0286552   0.649  0.51613    
+household_income14           0.0259776  0.0260719   0.996  0.31909    
+primary_head_avg_work_hours -0.0004279  0.0001417  -3.019  0.00254 ** 
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.2561 on 9996 degrees of freedom
-Multiple R-squared:  0.006644,	Adjusted R-squared:  0.005054 
+Residual standard error: 0.2561 on 9994 degrees of freedom
+Multiple R-squared:  0.006834,	Adjusted R-squared:  0.005045 
+F-statistic:  3.82 on 18 and 9994 DF,  p-value: 7.833e-08
 
+> model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
++               num_small_appliances + num_members_in_household + household_income + 
++               primary_head_avg_work_hours, data=cluster_6)
+> summary(model)
 
-cluster 6
+Call:
+lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + 
+    weekday_shopper + num_large_appliances + num_small_appliances + 
+    num_members_in_household + household_income + primary_head_avg_work_hours, 
+    data = cluster_6)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.14749 -0.10950 -0.09348 -0.07257  0.96143 
+
 Coefficients: (3 not defined because of singularities)
                               Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                  0.1452878  0.0196890   7.379 1.71e-13 ***
+(Intercept)                  0.1398278  0.0210462   6.644 3.20e-11 ***
 Q2                                  NA         NA      NA       NA    
 Q3                                  NA         NA      NA       NA    
 Q4                                  NA         NA      NA       NA    
-num_small_appliances         0.0015398  0.0015386   1.001   0.3170    
-num_members_in_household    -0.0119623  0.0022542  -5.307 1.14e-07 ***
-household_income2           -0.0092666  0.0215090  -0.431   0.6666    
-household_income3           -0.0213624  0.0199305  -1.072   0.2838    
-household_income4           -0.0206799  0.0195416  -1.058   0.2900    
-household_income5           -0.0187381  0.0194430  -0.964   0.3352    
-household_income6           -0.0125737  0.0198365  -0.634   0.5262    
-household_income7           -0.0167526  0.0201246  -0.832   0.4052    
-household_income8           -0.0308278  0.0204931  -1.504   0.1325    
-household_income9           -0.0205577  0.0213824  -0.961   0.3364    
-household_income10          -0.0458284  0.0224589  -2.041   0.0413 *  
-household_income11          -0.0068747  0.0216744  -0.317   0.7511    
-household_income12          -0.0057551  0.0245830  -0.234   0.8149    
-household_income13          -0.0570002  0.0287710  -1.981   0.0476 *  
-household_income14          -0.0026962  0.0270164  -0.100   0.9205    
-primary_head_avg_work_hours -0.0003477  0.0001372  -2.534   0.0113 *  
+weekday_shopper              0.0082229  0.0067559   1.217   0.2236    
+num_large_appliances        -0.0013602  0.0022384  -0.608   0.5434    
+num_small_appliances         0.0018624  0.0016129   1.155   0.2482    
+num_members_in_household    -0.0118797  0.0022607  -5.255 1.51e-07 ***
+household_income2           -0.0081196  0.0216291  -0.375   0.7074    
+household_income3           -0.0197985  0.0200882  -0.986   0.3244    
+household_income4           -0.0188758  0.0197310  -0.957   0.3388    
+household_income5           -0.0168849  0.0196430  -0.860   0.3900    
+household_income6           -0.0101859  0.0200811  -0.507   0.6120    
+household_income7           -0.0141800  0.0204302  -0.694   0.4877    
+household_income8           -0.0283176  0.0208657  -1.357   0.1748    
+household_income9           -0.0170258  0.0217835  -0.782   0.4345    
+household_income10          -0.0425970  0.0228929  -1.861   0.0628 .  
+household_income11          -0.0049323  0.0220383  -0.224   0.8229    
+household_income12          -0.0019221  0.0249536  -0.077   0.9386    
+household_income13          -0.0545052  0.0291012  -1.873   0.0611 .  
+household_income14          -0.0001587  0.0274334  -0.006   0.9954    
+primary_head_avg_work_hours -0.0003217  0.0001417  -2.270   0.0232 *  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.2708 on 10915 degrees of freedom
-Multiple R-squared:  0.005458,	Adjusted R-squared:  0.004 
+Residual standard error: 0.2708 on 10913 degrees of freedom
+Multiple R-squared:  0.005625,	Adjusted R-squared:  0.003985 
+F-statistic: 3.429 on 18 and 10913 DF,  p-value: 1.125e-06
 
+> model <- lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + weekday_shopper + num_large_appliances +  #rim_market +  
++               num_small_appliances + num_members_in_household + household_income + 
++               primary_head_avg_work_hours, data=cluster_7)
+> summary(model)
 
-cluster 7
+Call:
+lm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + 
+    weekday_shopper + num_large_appliances + num_small_appliances + 
+    num_members_in_household + household_income + primary_head_avg_work_hours, 
+    data = cluster_7)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.09950 -0.06164 -0.05318 -0.04386  0.97433 
+
 Coefficients: (3 not defined because of singularities)
                               Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                  0.0753127  0.0168180   4.478 7.63e-06 ***
+(Intercept)                  0.0797697  0.0179744   4.438 9.19e-06 ***
 Q2                                  NA         NA      NA       NA    
 Q3                                  NA         NA      NA       NA    
 Q4                                  NA         NA      NA       NA    
-num_small_appliances        -0.0014340  0.0013896  -1.032  0.30210    
-num_members_in_household    -0.0053912  0.0019589  -2.752  0.00593 ** 
-household_income2            0.0015537  0.0183887   0.084  0.93267    
-household_income3           -0.0028874  0.0170614  -0.169  0.86562    
-household_income4            0.0078033  0.0169986   0.459  0.64621    
-household_income5            0.0079085  0.0167730   0.472  0.63729    
-household_income6            0.0165064  0.0171326   0.963  0.33535    
-household_income7            0.0219382  0.0173375   1.265  0.20578    
-household_income8            0.0127966  0.0177775   0.720  0.47165    
-household_income9            0.0188024  0.0186850   1.006  0.31431    
-household_income10           0.0075251  0.0191454   0.393  0.69429    
-household_income11           0.0221609  0.0188045   1.178  0.23863    
-household_income12           0.0408676  0.0221189   1.848  0.06469 .  
-household_income13          -0.0273968  0.0255651  -1.072  0.28391    
-household_income14           0.0218210  0.0240493   0.907  0.36425    
-primary_head_avg_work_hours -0.0002928  0.0001229  -2.383  0.01720 *  
+weekday_shopper              0.0030518  0.0060396   0.505  0.61336    
+num_large_appliances        -0.0041761  0.0019381  -2.155  0.03121 *  
+num_small_appliances        -0.0005636  0.0014462  -0.390  0.69674    
+num_members_in_household    -0.0052008  0.0019620  -2.651  0.00804 ** 
+household_income2            0.0059380  0.0185105   0.321  0.74838    
+household_income3            0.0022838  0.0172288   0.133  0.89455    
+household_income4            0.0134814  0.0172142   0.783  0.43356    
+household_income5            0.0133648  0.0169603   0.788  0.43071    
+household_income6            0.0231174  0.0173910   1.329  0.18379    
+household_income7            0.0292162  0.0176525   1.655  0.09794 .  
+household_income8            0.0208391  0.0181672   1.147  0.25138    
+household_income9            0.0274549  0.0190875   1.438  0.15037    
+household_income10           0.0167069  0.0195927   0.853  0.39384    
+household_income11           0.0303287  0.0192002   1.580  0.11423    
+household_income12           0.0502114  0.0225153   2.230  0.02577 *  
+household_income13          -0.0191509  0.0258648  -0.740  0.45906    
+household_income14           0.0311280  0.0244488   1.273  0.20298    
+primary_head_avg_work_hours -0.0003122  0.0001267  -2.464  0.01377 *  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.2138 on 8655 degrees of freedom
-Multiple R-squared:  0.003195,	Adjusted R-squared:  0.001353 
+Residual standard error: 0.2138 on 8653 degrees of freedom
+Multiple R-squared:  0.00376,	Adjusted R-squared:  0.001687 
+F-statistic: 1.814 on 18 and 8653 DF,  p-value: 0.01853
