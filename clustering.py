@@ -32,6 +32,8 @@ del (soup_data['rim_week'])
 del (soup_data['rim_market'])
 del (soup_data['household_id'])
 del (soup_data['num_pets'])
+del (soup_data['weekday_shopper'])
+del (soup_data['num_large_appliances'])
 
 # Code block taken from (with change a variable name)
 # http://stackoverflow.com/questions/26414913/normalize-columns-of-pandas-data-frame
