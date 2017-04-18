@@ -20,12 +20,16 @@ full_soup_data = soup_data.copy()
 
 # Remove response from dataframe
 del (soup_data['Q1'])
+del (soup_data['Q2'])
+del (soup_data['Q3'])
+del (soup_data['Q4'])
 del (soup_data['total_units_purchased'])
 del (soup_data['total_units_purchased_on_mfr_coup'])
 del (soup_data['total_units_purchased_on_store_coup'])
 del (soup_data['male_head_avg_work_hours'])
 del (soup_data['female_head_avg_work_hours'])
 del (soup_data['rim_week'])
+del (soup_data['rim_market'])
 del (soup_data['household_id'])
 del (soup_data['num_pets'])
 
