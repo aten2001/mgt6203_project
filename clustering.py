@@ -33,7 +33,7 @@ del (soup_data['rim_market'])
 del (soup_data['household_id'])
 del (soup_data['num_pets'])
 del (soup_data['weekday_shopper'])
-del (soup_data['num_large_appliances'])
+# del (soup_data['num_large_appliances'])
 
 # Code block taken from (with change a variable name)
 # http://stackoverflow.com/questions/26414913/normalize-columns-of-pandas-data-frame
@@ -54,22 +54,22 @@ pd.set_option('display.width', 500)
 
 ### Calinski-Harabaz Index
 ks = range(2, 8)
-for k in [2, 5, 8]:
-    print('num clusters: ' + str(k))
-    kmeans_model = KMeans(n_clusters=k, random_state=1).fit(soup_data_normalized)
-    labels = kmeans_model.labels_
-
-    cur_k = 'k'+str(k)
-    full_soup_data[cur_k] = labels
-    soup_data[cur_k] = labels
-    min_k = soup_data[cur_k].min()
-    max_k = soup_data[cur_k].max()
-    for k in range(min_k, max_k + 1):
-        print('k grouping: ' + str(k))
-        cur_k_data = soup_data[soup_data[cur_k] == k]
-        print(cur_k_data.describe())
-
-
+# for k in [2, 5, 8]:
+#     print('num clusters: ' + str(k))
+#     kmeans_model = KMeans(n_clusters=k, random_state=1).fit(soup_data_normalized)
+#     labels = kmeans_model.labels_
+#
+#     cur_k = 'k'+str(k)
+#     full_soup_data[cur_k] = labels
+#     soup_data[cur_k] = labels
+#     min_k = soup_data[cur_k].min()
+#     max_k = soup_data[cur_k].max()
+#     for k in range(min_k, max_k + 1):
+#         print('k grouping: ' + str(k))
+#         cur_k_data = soup_data[soup_data[cur_k] == k]
+#         print(cur_k_data.describe())
+#
+#
 # full_soup_data.to_sql('cluster_results', engine, if_exists='append', index=False)
 # print('dataframe uploaded')
 
@@ -95,6 +95,7 @@ def elbow_analysis():
     plt.xlabel('Number of clusters')
     plt.ylabel('Average within-cluster sum of squares')
     plt.title('Elbow for KMeans clustering')
+    plt.show()
 
 
-#elbow_analysis()
+elbow_analysis()
