@@ -177,6 +177,52 @@ Residual deviance: 11157  on 10647  degrees of freedom
 AIC: 11203
 
 
+
+Call:
+glm(formula = mfg_coup_bool ~ Q2 + Q3 + Q4 + year + rim_market + 
+    num_large_appliances + household_income + total_head_avg_work_hours + 
+    weekday_purchase_percentage, family = "binomial", data = mfg_cluster_1)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.7108  -0.7805  -0.6267  -0.4189   2.3517  
+
+Coefficients:
+                             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                 38.895297  62.120607   0.626 0.531233    
+Q2                          -0.456446   0.061550  -7.416 1.21e-13 ***
+Q3                          -0.985705   0.070002 -14.081  < 2e-16 ***
+Q4                           0.024472   0.063728   0.384 0.700980    
+year                        -0.020683   0.031264  -0.662 0.508253    
+rim_market2                  0.516478   0.082783   6.239 4.41e-10 ***
+num_large_appliances         0.048709   0.012742   3.823 0.000132 ***
+household_income2            0.130041   0.144709   0.899 0.368845    
+household_income3            0.211667   0.138245   1.531 0.125746    
+household_income4            0.421151   0.137896   3.054 0.002257 ** 
+household_income5            0.521226   0.137207   3.799 0.000145 ***
+household_income6            0.634174   0.142459   4.452 8.52e-06 ***
+household_income7            0.640255   0.156140   4.101 4.12e-05 ***
+household_income8            0.322983   0.177590   1.819 0.068957 .  
+household_income9            1.002348   0.231608   4.328 1.51e-05 ***
+household_income10          -0.136143   0.349527  -0.390 0.696903    
+household_income11           1.057115   0.213181   4.959 7.09e-07 ***
+household_income12           1.688490   0.430181   3.925 8.67e-05 ***
+household_income13           0.363961   0.804041   0.453 0.650790    
+household_income14           2.254685   0.512827   4.397 1.10e-05 ***
+total_head_avg_work_hours   -0.003128   0.001178  -2.656 0.007909 ** 
+weekday_purchase_percentage  0.479340   0.142712   3.359 0.000783 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 11644  on 10669  degrees of freedom
+Residual deviance: 11158  on 10648  degrees of freedom
+AIC: 11202
+
+
+
+
 # cluster 3
 Call:
 glm(formula = mfg_coup_bool ~ Q2 + Q3 + Q4 + year + rim_market + 

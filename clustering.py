@@ -80,7 +80,6 @@ for table in tables:
         print('WARNING: KeyError')
         print(ke)
 
-
     print(soup_data.columns.values)
 
     # Code block taken from (with change a variable name)
@@ -106,9 +105,16 @@ for table in tables:
         score = metrics.calinski_harabaz_score(x_scaled, labels)
         print('k: ' + str(k) + ' score: ' + str(score))
 
-    # elbow_analysis(table)
+    elbow_analysis(table)
 
     print()
+
+    print('non cluster summary')
+    print(soup_data.describe())
+
+
+    print('clustering summaries')
+
 
     ### Print summary statistics
     # """
