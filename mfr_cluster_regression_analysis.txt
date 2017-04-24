@@ -1,0 +1,260 @@
+mfr cluster regression analysis
+
+Call:
+glm(formula = mfg_coup_bool ~ Q2 + Q3 + Q4 + year + rim_market + 
+    num_large_appliances + num_pets + household_income + total_head_avg_work_hours + 
+    weekday_purchase_percentage + k3, family = "binomial", data = mfg_cluster_data)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.1238  -0.7643  -0.6012  -0.4497   2.3612  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                 118.185115  37.644091   3.140 0.001692 ** 
+Q2                           -0.570254   0.037735 -15.112  < 2e-16 ***
+Q3                           -0.980272   0.041975 -23.353  < 2e-16 ***
+Q4                            0.051150   0.038180   1.340 0.180342    
+year                         -0.060314   0.018945  -3.184 0.001455 ** 
+rim_market2                   0.411306   0.048014   8.566  < 2e-16 ***
+num_large_appliances          0.009230   0.006898   1.338 0.180867    
+num_pets                     -0.024770   0.013108  -1.890 0.058806 .  
+household_income2             0.239805   0.108913   2.202 0.027680 *  
+household_income3             0.363281   0.104293   3.483 0.000495 ***
+household_income4             0.538588   0.103734   5.192 2.08e-07 ***
+household_income5             0.576870   0.102609   5.622 1.89e-08 ***
+household_income6             0.652727   0.104835   6.226 4.78e-10 ***
+household_income7             0.728448   0.107362   6.785 1.16e-11 ***
+household_income8             0.483133   0.112399   4.298 1.72e-05 ***
+household_income9             0.654506   0.115678   5.658 1.53e-08 ***
+household_income10            0.350602   0.122542   2.861 0.004222 ** 
+household_income11            0.548915   0.119616   4.589 4.45e-06 ***
+household_income12            0.642263   0.135655   4.735 2.20e-06 ***
+household_income13            0.285523   0.181238   1.575 0.115163    
+household_income14            0.494903   0.167165   2.961 0.003071 ** 
+total_head_avg_work_hours    -0.004431   0.000697  -6.357 2.06e-10 ***
+weekday_purchase_percentage   0.345209   0.075253   4.587 4.49e-06 ***
+k31                          -0.119762   0.051485  -2.326 0.020011 *  
+k32                          -0.145887   0.059669  -2.445 0.014488 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 32037  on 30391  degrees of freedom
+Residual deviance: 30823  on 30367  degrees of freedom
+AIC: 30873
+
+
+
+# cluster 1
+Call:
+glm(formula = mfg_coup_bool ~ Q2 + Q3 + Q4 + year + rim_market + 
+    num_large_appliances + num_pets + household_income + total_head_avg_work_hours + 
+    weekday_purchase_percentage, family = "binomial", data = mfg_cluster_0)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.1059  -0.7672  -0.5803  -0.4495   2.2939  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                 230.559999  53.157765   4.337 1.44e-05 ***
+Q2                           -0.669247   0.053687 -12.466  < 2e-16 ***
+Q3                           -1.039077   0.059028 -17.603  < 2e-16 ***
+Q4                            0.044098   0.053478   0.825 0.409598    
+year                         -0.116200   0.026752  -4.344 1.40e-05 ***
+rim_market2                   0.286774   0.080876   3.546 0.000391 ***
+num_large_appliances         -0.010154   0.010838  -0.937 0.348785    
+num_pets                     -0.024101   0.018418  -1.309 0.190672    
+household_income3            -0.750696   0.390107  -1.924 0.054313 .  
+household_income4            -0.277193   0.350733  -0.790 0.429338    
+household_income5            -0.584823   0.345427  -1.693 0.090447 .  
+household_income6            -0.515847   0.343887  -1.500 0.133602    
+household_income7            -0.447650   0.343959  -1.301 0.193099    
+household_income8            -0.654706   0.345545  -1.895 0.058131 .  
+household_income9            -0.516042   0.345682  -1.493 0.135484    
+household_income10           -0.764800   0.348063  -2.197 0.027999 *  
+household_income11           -0.664234   0.348014  -1.909 0.056308 .  
+household_income12           -0.568860   0.354167  -1.606 0.108232    
+household_income13           -0.851400   0.373961  -2.277 0.022804 *  
+household_income14           -0.780281   0.370551  -2.106 0.035227 *  
+total_head_avg_work_hours    -0.003590   0.001051  -3.416 0.000635 ***
+weekday_purchase_percentage   0.354637   0.098600   3.597 0.000322 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 16211  on 15550  degrees of freedom
+Residual deviance: 15549  on 15529  degrees of freedom
+AIC: 15593
+
+Call:
+glm(formula = mfg_coup_bool ~ Q2 + Q3 + Q4 + year + rim_market + 
+    household_income + total_head_avg_work_hours + weekday_purchase_percentage, 
+    family = "binomial", data = mfg_cluster_0)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.0979  -0.7678  -0.5806  -0.4495   2.2913  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                 230.516404  53.154034   4.337 1.45e-05 ***
+Q2                           -0.669238   0.053682 -12.467  < 2e-16 ***
+Q3                           -1.039076   0.059024 -17.604  < 2e-16 ***
+Q4                            0.043838   0.053471   0.820 0.412305    
+year                         -0.116237   0.026751  -4.345 1.39e-05 ***
+rim_market2                   0.337254   0.041428   8.141 3.93e-16 ***
+household_income3            -0.759846   0.389617  -1.950 0.051148 .  
+household_income4            -0.284556   0.350422  -0.812 0.416770    
+household_income5            -0.590203   0.345171  -1.710 0.087287 .  
+household_income6            -0.525115   0.343557  -1.528 0.126397    
+household_income7            -0.461152   0.343511  -1.342 0.179445    
+household_income8            -0.667275   0.344865  -1.935 0.053004 .  
+household_income9            -0.526407   0.345083  -1.525 0.127147    
+household_income10           -0.781731   0.347291  -2.251 0.024389 *  
+household_income11           -0.683412   0.347090  -1.969 0.048956 *  
+household_income12           -0.578061   0.353303  -1.636 0.101805    
+household_income13           -0.868430   0.373111  -2.328 0.019937 *  
+household_income14           -0.806744   0.369413  -2.184 0.028973 *  
+total_head_avg_work_hours    -0.003571   0.001049  -3.404 0.000663 ***
+weekday_purchase_percentage   0.340925   0.098251   3.470 0.000521 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 16211  on 15550  degrees of freedom
+Residual deviance: 15552  on 15531  degrees of freedom
+AIC: 15592
+
+
+
+# cluster 2
+Call:
+glm(formula = mfg_coup_bool ~ Q2 + Q3 + Q4 + year + rim_market + 
+    num_large_appliances + num_pets + household_income + total_head_avg_work_hours + 
+    weekday_purchase_percentage, family = "binomial", data = mfg_cluster_1)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.7174  -0.7801  -0.6272  -0.4187   2.3576  
+
+Coefficients:
+                             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                 38.593673  62.128386   0.621 0.534473    
+Q2                          -0.456888   0.061556  -7.422 1.15e-13 ***
+Q3                          -0.985873   0.070007 -14.082  < 2e-16 ***
+Q4                           0.024250   0.063735   0.380 0.703587    
+year                        -0.020522   0.031268  -0.656 0.511617    
+rim_market2                  0.524222   0.083025   6.314 2.72e-10 ***
+num_large_appliances         0.047700   0.012771   3.735 0.000188 ***
+num_pets                    -0.029292   0.022855  -1.282 0.199974    
+household_income2            0.137208   0.144798   0.948 0.343342    
+household_income3            0.219429   0.138360   1.586 0.112756    
+household_income4            0.422068   0.137887   3.061 0.002206 ** 
+household_income5            0.525915   0.137243   3.832 0.000127 ***
+household_income6            0.632849   0.142444   4.443 8.88e-06 ***
+household_income7            0.644636   0.156195   4.127 3.67e-05 ***
+household_income8            0.329251   0.177636   1.854 0.063808 .  
+household_income9            1.016572   0.231877   4.384 1.16e-05 ***
+household_income10          -0.137007   0.349545  -0.392 0.695089    
+household_income11           1.072006   0.213502   5.021 5.14e-07 ***
+household_income12           1.675848   0.430404   3.894 9.87e-05 ***
+household_income13           0.354549   0.804076   0.441 0.659256    
+household_income14           2.252225   0.512870   4.391 1.13e-05 ***
+total_head_avg_work_hours   -0.002867   0.001195  -2.400 0.016405 *  
+weekday_purchase_percentage  0.474262   0.142790   3.321 0.000896 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 11644  on 10669  degrees of freedom
+Residual deviance: 11157  on 10647  degrees of freedom
+AIC: 11203
+
+
+# cluster 3
+Call:
+glm(formula = mfg_coup_bool ~ Q2 + Q3 + Q4 + year + rim_market + 
+    num_large_appliances + num_pets + household_income + total_head_avg_work_hours + 
+    weekday_purchase_percentage, family = "binomial", data = mfg_cluster_2)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.1830  -0.7064  -0.5661  -0.4144   2.7301  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                 -92.465122 106.719576  -0.866 0.386254    
+Q2                           -0.558170   0.107942  -5.171 2.33e-07 ***
+Q3                           -0.769742   0.116545  -6.605 3.98e-11 ***
+Q4                            0.157399   0.107663   1.462 0.143754    
+year                          0.045752   0.053709   0.852 0.394297    
+rim_market2                   0.584670   0.094213   6.206 5.44e-10 ***
+num_large_appliances         -0.025982   0.016244  -1.599 0.109721    
+num_pets                      0.013860   0.034563   0.401 0.688422    
+household_income2             0.367450   0.170537   2.155 0.031188 *  
+household_income3             0.726615   0.167304   4.343 1.40e-05 ***
+household_income4             0.430321   0.178552   2.410 0.015950 *  
+household_income5             0.747045   0.183012   4.082 4.47e-05 ***
+household_income6             0.782704   0.212825   3.678 0.000235 ***
+household_income7             1.219693   0.223149   5.466 4.61e-08 ***
+household_income8             0.950853   0.308368   3.084 0.002046 ** 
+household_income9            -0.451358   0.763643  -0.591 0.554481    
+household_income10            0.436901   0.577471   0.757 0.449303    
+household_income11          -11.743842 289.611937  -0.041 0.967654    
+household_income12            1.871733   0.538948   3.473 0.000515 ***
+total_head_avg_work_hours    -0.009029   0.001766  -5.111 3.20e-07 ***
+weekday_purchase_percentage   0.005834   0.214565   0.027 0.978310    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 4154.3  on 4170  degrees of freedom
+Residual deviance: 3953.1  on 4150  degrees of freedom
+AIC: 3995.1
+
+
+
+Call:
+glm(formula = mfg_coup_bool ~ Q2 + Q3 + Q4 + year + rim_market + 
+    household_income + total_head_avg_work_hours, family = "binomial", 
+    data = mfg_cluster_2)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.1584  -0.7034  -0.5695  -0.4151   2.7306  
+
+Coefficients:
+                            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)               -92.356880 106.673918  -0.866 0.386607    
+Q2                         -0.556973   0.107905  -5.162 2.45e-07 ***
+Q3                         -0.770296   0.116506  -6.612 3.80e-11 ***
+Q4                          0.157859   0.107621   1.467 0.142428    
+year                        0.045642   0.053686   0.850 0.395228    
+rim_market2                 0.658184   0.081686   8.058 7.79e-16 ***
+household_income2           0.354610   0.169261   2.095 0.036167 *  
+household_income3           0.699199   0.165994   4.212 2.53e-05 ***
+household_income4           0.394964   0.177164   2.229 0.025789 *  
+household_income5           0.696897   0.180363   3.864 0.000112 ***
+household_income6           0.722768   0.209487   3.450 0.000560 ***
+household_income7           1.166647   0.220100   5.301 1.15e-07 ***
+household_income8           0.889096   0.305401   2.911 0.003600 ** 
+household_income9          -0.544819   0.761128  -0.716 0.474112    
+household_income10          0.355456   0.573248   0.620 0.535209    
+household_income11        -11.925924 289.604783  -0.041 0.967152    
+household_income12          1.747133   0.532735   3.280 0.001040 ** 
+total_head_avg_work_hours  -0.009040   0.001711  -5.282 1.28e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 4154.3  on 4170  degrees of freedom
+Residual deviance: 3955.8  on 4153  degrees of freedom
+AIC: 3991.8
