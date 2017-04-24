@@ -1,0 +1,107 @@
+> summary(p_model)
+
+Call:
+glm(formula = sqrt(proportion_purchased_store_coup) ~ Q2 + Q3 + 
+    Q4 + year + rim_market + num_large_appliances + num_small_appliances + 
+    num_pets + num_members_in_household + household_income + 
+    total_head_avg_work_hours + weekday_purchase_percentage + 
+    residence_status, family = Gamma(link = "log"), data = non_zero_store_data)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.46672  -0.39260  -0.09722   0.23531   1.45533  
+
+Coefficients:
+                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -3.422e+01  1.516e+01  -2.257 0.024061 *  
+Q2                           1.687e-01  1.512e-02  11.161  < 2e-16 ***
+Q3                           1.354e-01  1.722e-02   7.860 4.44e-15 ***
+Q4                          -6.646e-03  1.442e-02  -0.461 0.644916    
+year                         1.676e-02  7.631e-03   2.196 0.028144 *  
+rim_market2                  2.057e-01  2.141e-02   9.606  < 2e-16 ***
+num_large_appliances        -2.102e-03  2.956e-03  -0.711 0.477079    
+num_small_appliances         3.149e-03  2.424e-03   1.299 0.194021    
+num_pets                    -4.312e-03  5.425e-03  -0.795 0.426762    
+num_members_in_household    -8.290e-02  5.094e-03 -16.273  < 2e-16 ***
+household_income2            2.855e-02  4.468e-02   0.639 0.522868    
+household_income3            1.805e-03  4.270e-02   0.042 0.966284    
+household_income4           -7.336e-03  4.259e-02  -0.172 0.863244    
+household_income5           -4.376e-02  4.228e-02  -1.035 0.300728    
+household_income6            9.018e-03  4.306e-02   0.209 0.834129    
+household_income7           -5.061e-02  4.393e-02  -1.152 0.249315    
+household_income8           -6.774e-02  4.600e-02  -1.472 0.140960    
+household_income9           -3.991e-02  4.704e-02  -0.848 0.396216    
+household_income10           5.195e-02  5.020e-02   1.035 0.300750    
+household_income11          -1.685e-02  4.811e-02  -0.350 0.726119    
+household_income12           1.162e-01  5.435e-02   2.137 0.032605 *  
+household_income13          -1.917e-01  7.342e-02  -2.611 0.009047 ** 
+household_income14           5.912e-02  6.606e-02   0.895 0.370833    
+total_head_avg_work_hours    2.260e-04  2.256e-04   1.001 0.316627    
+weekday_purchase_percentage  1.642e-01  2.921e-02   5.622 1.96e-08 ***
+residence_status             6.257e-02  1.624e-02   3.852 0.000118 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for Gamma family taken to be 0.2061665)
+
+    Null deviance: 1542.6  on 6689  degrees of freedom
+Residual deviance: 1319.2  on 6664  degrees of freedom
+AIC: -3762.6
+
+
+Call:
+glm(formula = proportion_purchased_store_coup ~ Q2 + Q3 + Q4 + 
+    year + rim_market + num_members_in_household + weekday_purchase_percentage, 
+    family = Gamma(link = "log"), data = non_zero_store_data)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.4819  -0.9463  -0.1713   0.5866   1.2342  
+
+Coefficients:
+                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -48.319118  21.559571  -2.241   0.0250 *  
+Q2                            0.132038   0.021796   6.058 1.44e-09 ***
+Q3                            0.135341   0.025176   5.376 7.83e-08 ***
+Q4                            0.048685   0.019950   2.440   0.0147 *  
+year                          0.023937   0.010850   2.206   0.0274 *  
+rim_market2                   0.180443   0.015791  11.427  < 2e-16 ***
+num_members_in_household     -0.049810   0.006198  -8.036 1.05e-15 ***
+weekday_purchase_percentage   0.155348   0.039096   3.974 7.14e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for Gamma family taken to be 0.519266)
+
+    Null deviance: 6620.0  on 8383  degrees of freedom
+Residual deviance: 6472.3  on 8376  degrees of freedom
+AIC: 5463.6
+
+
+Call:
+glm(formula = sqrt(proportion_purchased_store_coup) ~ Q2 + Q3 + 
+    Q4 + year + rim_market + num_members_in_household + weekday_purchase_percentage, 
+    family = Gamma(link = "log"), data = non_zero_store_data)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.47826  -0.44121  -0.01344   0.35495   0.72874  
+
+Coefficients:
+                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 -31.035389  12.730004  -2.438   0.0148 *  
+Q2                            0.082836   0.012869   6.437 1.29e-10 ***
+Q3                            0.085802   0.014865   5.772 8.11e-09 ***
+Q4                            0.027048   0.011779   2.296   0.0217 *  
+year                          0.015381   0.006407   2.401   0.0164 *  
+rim_market2                   0.116433   0.009324  12.488  < 2e-16 ***
+num_members_in_household     -0.032739   0.003660  -8.946  < 2e-16 ***
+weekday_purchase_percentage   0.098209   0.023084   4.254 2.12e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for Gamma family taken to be 0.1810367)
+
+    Null deviance: 1910.6  on 8383  degrees of freedom
+Residual deviance: 1848.7  on 8376  degrees of freedom
+AIC: 2824.5

@@ -1,0 +1,170 @@
+Call:
+glm(formula = mfg_coup_bool ~ Q2 + Q3 + Q4 + year + rim_market + 
+    num_large_appliances + num_small_appliances + num_pets + 
+    num_members_in_household + household_income + total_head_avg_work_hours + 
+    weekday_purchase_percentage + residence_status + brand, family = "binomial", 
+    data = mfg_data)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.2158  -0.6108  -0.5067  -0.3927   2.7325  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                  2.206e+01  3.790e+02   0.058 0.953594    
+Q2                          -4.557e-01  3.310e-02 -13.766  < 2e-16 ***
+Q3                          -8.497e-01  3.762e-02 -22.588  < 2e-16 ***
+Q4                           5.025e-03  3.202e-02   0.157 0.875272    
+year                        -1.804e-02  1.671e-02  -1.080 0.280154    
+rim_market2                  4.374e-01  4.764e-02   9.181  < 2e-16 ***
+num_large_appliances         6.550e-03  6.229e-03   1.052 0.292984    
+num_small_appliances        -1.879e-03  5.201e-03  -0.361 0.717929    
+num_pets                    -2.285e-02  1.115e-02  -2.049 0.040434 *  
+num_members_in_household    -4.375e-02  1.080e-02  -4.050 5.12e-05 ***
+household_income2            2.155e-01  9.575e-02   2.251 0.024390 *  
+household_income3            3.146e-01  9.235e-02   3.406 0.000659 ***
+household_income4            4.435e-01  9.174e-02   4.835 1.33e-06 ***
+household_income5            4.595e-01  9.088e-02   5.056 4.28e-07 ***
+household_income6            5.340e-01  9.262e-02   5.765 8.17e-09 ***
+household_income7            6.047e-01  9.473e-02   6.383 1.74e-10 ***
+household_income8            4.328e-01  9.897e-02   4.372 1.23e-05 ***
+household_income9            5.549e-01  1.017e-01   5.456 4.88e-08 ***
+household_income10           2.868e-01  1.078e-01   2.660 0.007812 ** 
+household_income11           4.709e-01  1.040e-01   4.528 5.95e-06 ***
+household_income12           5.734e-01  1.176e-01   4.875 1.09e-06 ***
+household_income13           3.000e-01  1.552e-01   1.933 0.053264 .  
+household_income14           4.650e-01  1.449e-01   3.208 0.001337 ** 
+total_head_avg_work_hours   -3.174e-03  4.943e-04  -6.422 1.35e-10 ***
+weekday_purchase_percentage  3.154e-01  6.447e-02   4.892 9.98e-07 ***
+residence_status            -2.068e-02  3.511e-02  -0.589 0.555733    
+brand12694                   1.248e+01  3.776e+02   0.033 0.973631    
+brand13000                   1.174e+01  3.776e+02   0.031 0.975204    
+brand14100                   1.714e-01  4.457e+02   0.000 0.999693    
+brand17000                   1.221e+01  3.776e+02   0.032 0.974195    
+brand17800                   1.126e+01  3.776e+02   0.030 0.976215    
+brand18300                  -3.753e-01  6.552e+02  -0.001 0.999543    
+brand18600                   1.069e+01  3.776e+02   0.028 0.977416    
+brand21000                   1.227e+01  3.776e+02   0.033 0.974073    
+brand22222                   1.160e+01  3.776e+02   0.031 0.975491    
+brand23254                   1.241e-01  5.347e+02   0.000 0.999815    
+brand24000                   1.325e+01  3.776e+02   0.035 0.972009    
+brand25200                   1.172e+01  3.776e+02   0.031 0.975231    
+brand27258                   1.085e+01  3.776e+02   0.029 0.977080    
+brand28000                  -3.654e-01  4.601e+02  -0.001 0.999366    
+brand30500                   1.190e+01  3.776e+02   0.032 0.974859    
+brand33600                   1.159e+01  3.776e+02   0.031 0.975515    
+brand35742                   1.286e+01  3.776e+02   0.034 0.972821    
+brand36800                   1.126e+01  3.776e+02   0.030 0.976220    
+brand39000                  -1.769e-01  4.157e+02   0.000 0.999660    
+brand39156                   2.298e-01  6.552e+02   0.000 0.999720    
+brand40054                   1.272e+01  3.776e+02   0.034 0.973132    
+brand40100                   1.164e+01  3.776e+02   0.031 0.975414    
+brand41000                   1.209e+01  3.776e+02   0.032 0.974463    
+brand41130                   1.137e+01  3.776e+02   0.030 0.975983    
+brand41147                   1.152e+01  3.776e+02   0.031 0.975668    
+brand41163                   1.250e+01  3.776e+02   0.033 0.973595    
+brand41196                   1.262e+01  3.776e+02   0.033 0.973337    
+brand41234                   1.216e+01  3.776e+02   0.032 0.974303    
+brand41277                   1.168e+01  3.776e+02   0.031 0.975314    
+brand41358                   1.148e+01  3.776e+02   0.030 0.975744    
+brand41360                   1.114e+01  3.776e+02   0.030 0.976459    
+brand41390                   1.661e-01  4.013e+02   0.000 0.999670    
+brand41500                  -5.765e-01  4.356e+02  -0.001 0.998944    
+brand41517                   1.241e+01  3.776e+02   0.033 0.973789    
+brand41591                   1.071e+01  3.776e+02   0.028 0.977376    
+brand41679                  -5.786e-01  4.624e+02  -0.001 0.999002    
+brand41789                   1.134e+01  3.776e+02   0.030 0.976037    
+brand43700                   1.265e+01  3.776e+02   0.034 0.973270    
+brand44300                   1.130e+01  3.776e+02   0.030 0.976120    
+brand45300                   1.231e+01  3.776e+02   0.033 0.973994    
+brand45454                   1.114e+01  3.776e+02   0.030 0.976454    
+brand48001                   1.179e+01  3.776e+02   0.031 0.975087    
+brand51000                   1.173e+01  3.776e+02   0.031 0.975214    
+brand52100                  -2.290e-01  4.169e+02  -0.001 0.999562    
+brand53000                   1.220e+01  3.776e+02   0.032 0.974223    
+brand53900                   1.066e+01  3.776e+02   0.028 0.977479    
+brand64144                   1.232e+01  3.776e+02   0.033 0.973979    
+brand70038                   1.160e+01  3.776e+02   0.031 0.975485    
+brand70106                   2.415e-01  5.347e+02   0.000 0.999640    
+brand70147                   1.351e+01  3.776e+02   0.036 0.971453    
+brand70164                   1.550e-01  4.625e+02   0.000 0.999733    
+brand70255                   1.183e+01  3.776e+02   0.031 0.975000    
+brand70320                   1.244e+01  3.776e+02   0.033 0.973728    
+brand70528                   1.160e+01  3.776e+02   0.031 0.975494    
+brand70662                   1.162e+01  3.776e+02   0.031 0.975439    
+brand70670                   1.120e+01  3.776e+02   0.030 0.976335    
+brand70844                   1.203e+01  3.776e+02   0.032 0.974593    
+brand70974                  -4.866e-01  4.876e+02  -0.001 0.999204    
+brand71240                   1.126e+01  3.776e+02   0.030 0.976203    
+brand71518                   1.302e-01  6.552e+02   0.000 0.999841    
+brand71816                   1.124e+01  3.776e+02   0.030 0.976248    
+brand71851                   1.076e+01  3.776e+02   0.028 0.977269    
+brand71891                   1.174e+01  3.776e+02   0.031 0.975199    
+brand71923                   1.125e+01  3.776e+02   0.030 0.976227    
+brand71956                   1.234e+01  3.776e+02   0.033 0.973923    
+brand72017                   6.914e-01  6.552e+02   0.001 0.999158    
+brand72700                   1.152e+01  3.776e+02   0.030 0.975669    
+brand73166                  -4.553e-01  4.002e+02  -0.001 0.999092    
+brand73201                   1.171e+01  3.776e+02   0.031 0.975262    
+brand74235                   1.211e+01  3.776e+02   0.032 0.974424    
+brand74317                   1.115e+01  3.776e+02   0.030 0.976449    
+brand74603                   1.168e+01  3.776e+02   0.031 0.975314    
+brand75091                   1.231e+01  3.776e+02   0.033 0.973995    
+brand75450                   1.142e+01  3.776e+02   0.030 0.975871    
+brand76186                   1.174e+01  3.776e+02   0.031 0.975201    
+brand88849                   1.121e+01  3.776e+02   0.030 0.976309    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 47281  on 55979  degrees of freedom
+Residual deviance: 45332  on 55878  degrees of freedom
+AIC: 45536
+
+
+
+
+
+Call:
+glm(formula = mfg_coup_bool ~ Q2 + Q3 + Q4 + year + rim_market + 
+    num_large_appliances + num_pets + household_income + total_head_avg_work_hours + 
+    weekday_purchase_percentage, family = "binomial", data = mfg_data)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.1306  -0.7642  -0.6011  -0.4508   2.3595  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                  1.178e+02  3.764e+01   3.130 0.001749 ** 
+Q2                          -5.697e-01  3.773e-02 -15.098  < 2e-16 ***
+Q3                          -9.794e-01  4.197e-02 -23.336  < 2e-16 ***
+Q4                           5.111e-02  3.817e-02   1.339 0.180651    
+year                        -6.020e-02  1.894e-02  -3.178 0.001482 ** 
+rim_market2                  4.242e-01  4.602e-02   9.218  < 2e-16 ***
+num_large_appliances         1.413e-02  6.367e-03   2.219 0.026485 *  
+num_pets                    -2.357e-02  1.308e-02  -1.802 0.071497 .  
+household_income2            2.390e-01  1.088e-01   2.198 0.027965 *  
+household_income3            3.536e-01  1.038e-01   3.406 0.000659 ***
+household_income4            5.346e-01  1.032e-01   5.182 2.20e-07 ***
+household_income5            5.837e-01  1.020e-01   5.722 1.05e-08 ***
+household_income6            6.754e-01  1.040e-01   6.496 8.22e-11 ***
+household_income7            7.615e-01  1.063e-01   7.164 7.85e-13 ***
+household_income8            5.219e-01  1.111e-01   4.697 2.65e-06 ***
+household_income9            7.003e-01  1.141e-01   6.136 8.44e-10 ***
+household_income10           4.007e-01  1.210e-01   3.313 0.000924 ***
+household_income11           5.962e-01  1.181e-01   5.048 4.46e-07 ***
+household_income12           6.940e-01  1.341e-01   5.175 2.28e-07 ***
+household_income13           3.431e-01  1.798e-01   1.909 0.056314 .  
+household_income14           5.561e-01  1.655e-01   3.360 0.000779 ***
+total_head_avg_work_hours   -3.502e-03  5.472e-04  -6.399 1.57e-10 ***
+weekday_purchase_percentage  3.274e-01  7.497e-02   4.368 1.26e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 32037  on 30391  degrees of freedom
+Residual deviance: 30830  on 30369  degrees of freedom
+AIC: 30876

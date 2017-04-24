@@ -13,7 +13,8 @@ import pprint as pp
 
 ENGINE_STR = 'mysql+pymysql://Jeffrey:AustinChrisSam@/PROJECT?host=mgt6203.c8s0bq6ntlv2.us-east-1.rds.amazonaws.com?port=3306'
 
-tables = ['mfg_consumer_analysis_quarterly', 'consumer_analysis_quarterly', 'mfg_consumer_analysis_total', 'consumer_analysis_total']
+# tables = ['mfg_consumer_analysis_quarterly', 'consumer_analysis_quarterly', 'mfg_consumer_analysis_total', 'consumer_analysis_total']
+tables = ['consumer_analysis_quarterly', 'mfg_consumer_analysis_quarterly']
 
 def elbow_analysis(table):
     # ### Elbow method
@@ -47,6 +48,8 @@ for table in tables:
     engine = sa.create_engine(ENGINE_STR)
     soup_data = pd.read_sql_query(sql, engine)
 
+    full_soup_data = soup_data.copy()
+
     # Remove response from dataframe
     try:
         del (soup_data['Q1'])
@@ -63,14 +66,22 @@ for table in tables:
         del (soup_data['primary_head_avg_work_hours'])
         #del (soup_data['num_pets'])
         del (soup_data['weekday_shopper'])
-        del (soup_data['num_large_appliances'])
+        #del (soup_data['num_large_appliances'])
         del (soup_data['num_small_appliances'])
-        del (soup_data['Year'])
+        del (soup_data['year'])
+        del (soup_data['store_coup_bool'])
     except KeyError as ke:
         print('WARNING: KeyError')
         print(ke)
 
-    full_soup_data = soup_data.copy()
+    try:
+        del (soup_data['mfg_coup_bool'])
+    except KeyError as ke:
+        print('WARNING: KeyError')
+        print(ke)
+
+
+    print(soup_data.columns.values)
 
     # Code block taken from (with change a variable name)
     # http://stackoverflow.com/questions/26414913/normalize-columns-of-pandas-data-frame
@@ -95,14 +106,13 @@ for table in tables:
         score = metrics.calinski_harabaz_score(x_scaled, labels)
         print('k: ' + str(k) + ' score: ' + str(score))
 
-    elbow_analysis(table)
+    # elbow_analysis(table)
 
     print()
 
-
     ### Print summary statistics
-    """
-    for k in [2, 5]:
+    # """
+    for k in [3]:
          print('num clusters: ' + str(k))
          kmeans_model = KMeans(n_clusters=k, random_state=1).fit(soup_data_normalized)
          labels = kmeans_model.labels_
@@ -118,9 +128,9 @@ for table in tables:
              print(cur_k_data.describe())
     
     ### Push results to database
-    full_soup_data.to_sql('cluster_results', engine, if_exists='append', index=False)
-    print('dataframe uploaded')
-    """
+    # full_soup_data.to_sql(table + '_cluster_results', engine, if_exists='append', index=False)
+    # print('dataframe uploaded')
+    # """
 
 
 
